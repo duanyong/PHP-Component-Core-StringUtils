@@ -261,7 +261,7 @@ final class StringUtils
     public static function isMobileNumber($str, $zone='china')
     {
         static $regex = array(
-            'china'  => '^1([358][0-9]|45|47)[0-9]{8}$',
+            'china'  => "/^1([358][0-9]|45|47)[0-9]{8}$/",
         );
 
         if (false === isset($regex[$zone])) {
@@ -270,7 +270,7 @@ final class StringUtils
 
         return true === self::trimToNull($str)
             ? false
-            : preg_match($regex[$zone], $str);
+            : !!(preg_match($regex[$zone], $str));
     }
 
     /**
@@ -283,7 +283,7 @@ final class StringUtils
      */
     public static function length($str)
     {
-        return \strlen($str);
+        return \mb_strlen($str, 'utf-8');
     }
 
     /**

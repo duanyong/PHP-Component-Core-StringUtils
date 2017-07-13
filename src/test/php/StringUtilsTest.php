@@ -264,14 +264,14 @@ class StringUtilsTest extends \PHPUnit_Framework_TestCase
     /**
      * @return void
      *
-     * @dataProvider providerIsEmpty
-     * @coversDefaultClass isNotEmpty
+     * @dataProvider providerIsMobileNumber
+     * @coversDefaultClass isMobileNumber
      * @test
      */
     public function testIsMobileNumber($expected, $str)
     {
         $actual = StringUtils::isMobileNumber($str);
-        $this->assertEquals(!$expected, $actual);
+        $this->assertEquals($expected, $actual);
     }
 
 
@@ -285,7 +285,8 @@ class StringUtilsTest extends \PHPUnit_Framework_TestCase
             array(0, ''),
             array(1, ' '),
             array(3, 'bob'),
-            array(7, '  bob  ')
+            array(7, '  bob  '),
+            array(2, '你好')
         );
     }
 
