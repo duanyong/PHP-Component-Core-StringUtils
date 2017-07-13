@@ -245,6 +245,35 @@ final class StringUtils
     }
 
     /**
+     * Checks if a `string` is mobile number.
+     *
+     *     StringUtils::isMobileNumber(18501669716);    // true
+     *     StringUtils::isMobileNumber('18501669716');  // true
+     *     StringUtils::isMobileNumber('3243241');      // false
+
+     *
+     * @param string $str The `string` to check.
+     * @param string $zone The `string` to country.
+     *
+     * @return boolean `true` if the `string` is a mobile number , `false`
+     *    otherwise.
+     */
+    public static function isMobileNumber($str, $zone='china')
+    {
+        static $regex = array(
+            'china'  => '^1([358][0-9]|45|47)[0-9]{8}$',
+        );
+
+        if (false === isset($regex[$zone])) {
+            return false;
+        }
+
+        return true === self::trimToNull($str)
+            ? false
+            : preg_match($regex[$zone], $str);
+    }
+
+    /**
      * Returns the length of a `string` or `0` if the `string` is `null`.
      *
      * @param string $str The `string` to check.
