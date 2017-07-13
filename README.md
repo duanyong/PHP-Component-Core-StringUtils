@@ -162,7 +162,7 @@ please make sure that you add **Component\Util\Singleton** to your component's
 ```json
 {
     "require": {
-        "florianwolters/component-core-stringutils": "0.4.*"
+        "duanyong/component-core-stringutils": "0.4.*"
     }
 }
 ```
