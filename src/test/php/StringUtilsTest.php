@@ -250,6 +250,34 @@ class StringUtilsTest extends \PHPUnit_Framework_TestCase
     /**
      * @return array
      */
+    public function providerIsMobileNumber()
+    {
+        return array(
+            array(true, 18501669716),
+            array(true, '18501669716'),
+            array(false, ' '),
+            array(false, '669716'),
+            array(false, '  669716  ')
+        );
+    }
+
+    /**
+     * @return void
+     *
+     * @dataProvider providerIsEmpty
+     * @coversDefaultClass isNotEmpty
+     * @test
+     */
+    public function testIsMobileNumber($expected, $str)
+    {
+        $actual = StringUtils::isMobileNumber($str);
+        $this->assertEquals(!$expected, $actual);
+    }
+
+
+    /**
+     * @return array
+     */
     public function providerLength()
     {
         return array(
