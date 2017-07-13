@@ -1,13 +1,13 @@
 <?php
 /**
- * FlorianWolters\Component\Core\StringUtils
+ * duanyong\Component\Core\StringUtils
  *
  * PHP Version 5.3
  *
- * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2010-2014 Florian Wolters (http://blog.florianwolters.de)
+ * @author    Duan Yong <coderduan@gmail.com>
+ * @copyright 2017 duanyong (http://duanyong.me)
  * @license   https://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link      https://github.com/FlorianWolters/PHP-Component-Core-StringUtils
+ * @link      https://github.com/duanyong/PHP-Component-Core-StringUtils
  */
 
 use Sami\Sami;
