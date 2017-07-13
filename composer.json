@@ -1,15 +1,15 @@
 {
-    "name": "florianwolters/component-core-stringutils",
+    "name": "duanyong/component-core-stringutils",
     "description": "Offers operations on the data type string as a PHP component.",
     "type": "library",
     "keywords": ["string", "language", "helper", "wrapper"],
-    "homepage": "http://github.com/FlorianWolters/PHP-Component-Core-StringUtils",
+    "homepage": "http://github.com/duanyong/PHP-Component-Core-StringUtils",
     "license": "LGPL-3.0+",
     "authors": [
       {
-        "name": "Florian Wolters",
-        "email": "wolters.fl@gmail.com",
-        "homepage": "http://blog.florianwolters.de",
+        "name": "Duan Yong",
+        "email": "coderduan@gmail.com",
+        "homepage": "http://duanyong.me",
         "role": "Developer"
       }
     ],
@@ -29,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "FlorianWolters\\Component\\Core\\": "src/main/php"
+            "duanyong\\Component\\Core\\": "src/main/php"
         }
     }
 }

@@ -14,11 +14,11 @@ use Sami\Sami;
 
 return new Sami(
     __DIR__ . '/src/main/php',
-    [
+    array(
         'theme' => 'enhanced',
-        'title' => 'FlorianWolters\Component\Core\StringUtils API',
+        'title' => 'duanyong\Component\Core\StringUtils API',
         'build_dir' => __DIR__ . '/review/api',
         'cache_dir' => __DIR__ . '/build/sami',
         'default_opened_level' => 2
-    ]
+    )
 );
