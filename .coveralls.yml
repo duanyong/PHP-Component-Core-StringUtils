@@ -18,7 +18,7 @@
 # Author:    Florian Wolters <wolters.fl@gmail.com>
 # Copyright: 2010-2014 Florian Wolters (http://blog.florianwolters.de)
 # License:   https://gnu.org/licenses/lgpl.txt LGPL-3.0+
-# Link:      https://github.com/FlorianWolters/PHP-Component-Core-StringUtils
+# Link:      https://github.com/duanyong/PHP-Component-Core-StringUtils
 
 service_name: travis-ci
 src_dir: src

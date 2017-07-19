@@ -274,6 +274,24 @@ final class StringUtils
     }
 
     /**
+     * Checks if a `string` is number.
+     *
+     *     StringUtils::isNumber(18501669716);    // true
+     *     StringUtils::isNumber('18501669716');  // true
+     *     StringUtils::isNumber('a23');          // false
+
+     *
+     * @param string $str The `string` to check.
+     *
+     * @return boolean `true` if the `string` is a number , `false`
+     *    otherwise.
+     */
+    public static function isNumber($str)
+    {
+        return is_numeric($str);
+    }
+
+    /**
      * Returns the length of a `string` or `0` if the `string` is `null`.
      *
      * @param string $str The `string` to check.

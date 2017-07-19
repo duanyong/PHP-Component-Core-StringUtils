@@ -275,6 +275,35 @@ class StringUtilsTest extends \PHPUnit_Framework_TestCase
     }
 
 
+
+    /**
+     * @return array
+     */
+    public function providerIsNumber()
+    {
+        return array(
+            array(true, 18501669716),
+            array(true, '18501669716'),
+            array(false, ' '),
+            array(false, '  66ads9716  ')
+        );
+    }
+
+    /**
+     * @return void
+     *
+     * @dataProvider providerIsNumber
+     * @coversDefaultClass isNumber
+     * @test
+     */
+    public function testIsNumber($expected, $str)
+    {
+        $actual = StringUtils::isNumber($str);
+        $this->assertEquals($expected, $actual);
+    }
+
+
+
     /**
      * @return array
      */
