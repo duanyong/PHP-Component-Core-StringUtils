@@ -1,22 +1,22 @@
 <?php
 /**
- * FlorianWolters\Component\Core\WordUtilsTest
+ * duanyong\Component\Core\WordUtilsTest
  *
  * PHP Version 5.3
  *
- * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2010-2014 Florian Wolters (http://blog.florianwolters.de)
+ * @author    Duan Yong <coderduan@gmail.com>
+ * @copyright 2010-2014 Duan Yong (http://duanyong.me)
  * @license   https://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link      https://github.com/FlorianWolters/PHP-Component-Core-StringUtils
+ * @link      https://github.com/duanyong/PHP-Component-Core-StringUtils
  */
 
-namespace FlorianWolters\Component\Core;
+namespace duanyong\Component\Core;
 
 /**
  * Test class for {@see WordUtils}.
  *
  * @since  Class available since Release 0.1.0
- * @covers FlorianWolters\Component\Core\WordUtils
+ * @covers duanyong\Component\Core\WordUtils
  */
 class WordUtilsTest extends \PHPUnit_Framework_TestCase
 {

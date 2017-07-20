@@ -1,16 +1,16 @@
 <?php
 /**
- * FlorianWolters\Component\Core\StringEscapeUtils
+ * duanyong\Component\Core\StringEscapeUtils
  *
  * PHP Version 5.3
  *
- * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2010-2014 Florian Wolters (http://blog.florianwolters.de)
+ * @author    Duan Yong <coderduan@gmail.com>
+ * @copyright 2010-2014 Duan Yong (http://duanyong.me)
  * @license   https://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link      https://github.com/FlorianWolters/PHP-Component-Core-StringUtils
+ * @link      https://github.com/duanyong/PHP-Component-Core-StringUtils
  */
 
-namespace FlorianWolters\Component\Core;
+namespace duanyong\Component\Core;
 
 /**
  * The class {@see StringEscapeUtils} class escapes and unescapes `string`s for
